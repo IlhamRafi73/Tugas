@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    color: #444;
+    padding: 50px;
+    height: 100vh;
+    background: whitesmoke;
+    
+    display: flex;
+    align-items: center; /* CROSS AXIS*/
+    justify-content: center; /* MAIN AXIS*/
+  }
+  
+  .box {
+    max-width: 900px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 30px 80px 10px rgba(0, 0, 0, .2);
+    
+    display: flex;
+  }
+  
+  .box__img {
+    height: 100%;
+    width: 100%;
+    display: block;
+  }
+  
+  .box__hero {
+    flex: 0 0 45%;
+  }
+  
+  .box__content {
+    background: white;
+    flex: 1;
+    padding: 35px 30px;
+    
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .box__heading {
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+    flex: 1;
+  }
+  
+  .box__description {
+    font-size: 15px;
+    font-family: 'Manrope', sans-serif;
+    color: #49556d;
+  }
+  
+  .box__details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+  }
+
+  .michelle{
+    display: flex;
+	flex-direction: row;
+	align-items: center;
+    justify-content: space-between;
+  }
+  
+  .michelle_icon{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  .michelle_icon_1{
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+  }
+
+  .michelle_userdate{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Manrope', sans-serif;
+    color: #49556d;
+  }
+
+  .michelle_userdate_date{
+    font-size: 15px;
+  }
+
+  .michelle_userdate_name{
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  @media (max-width: 700px) {
+    .box {
+        width: 250px;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        border-radius: 30px;
+        border-radius: 8px;
+        
+        overflow: hidden;
+        box-shadow: 0 30px 80px 10px rgba(0, 0, 0, .2);
+        
+        display: flex;
+      }
+      
+      .box__img {
+        height: 100%;
+        width: 250px;
+        display: block;
+      }
+      
+      .box__hero {
+        flex: 0 0 45%;
+        flex-flow: nowrap;
+        align-items: flex-start;
+      }
+      
+      .box__content {
+        background: white;
+        flex: 1;
+        padding: 35px 30px;
+        
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .box__title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      
+      .box__heading {
+        font-family: 'Manrope', sans-serif;
+        font-size: 20px;
+        flex: 1;
+      }
+      
+      .box__description {
+        font-size: 15px;
+        font-family: 'Manrope', sans-serif;
+        color: #49556d;
+      }
+      
+      .box__details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+      }
+    
+      .michelle{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+      
+      .michelle_icon{
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+      }
+      .michelle_icon_1{
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+      }
+    
+      .michelle_userdate{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-family: 'Manrope', sans-serif;
+        color: #49556d;
+      }
+    
+      .michelle_userdate_date{
+        font-size: 15px;
+      }
+    
+      .michelle_userdate_name{
+        font-size: 15px;
+        font-weight: bold;
+      }
+}
